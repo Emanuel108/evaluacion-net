@@ -1,0 +1,26 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#seccion-1, #optionQuestion-2, #optionQuestion-4, #optionQuestion-5, #optionQuestion-6, #optionQuestion-7, #optionQuestion-8, #optionQuestion-9, #optionQuestion-10, #optionQuestion-11, #optionQuestion-12, #optionQuestion-13, #optionQuestion-14, #optionQuestion-15, #optionQuestion-16, #optionQuestion-17, #optionQuestion-18, #optionQuestion-19, #optionQuestion-20 ,#optionQuestion-21, #optionQuestion-23, #optionQuestion-24, #optionQuestion-25, #optionQuestion-27, #optionQuestion-29, #optionQuestion-30, #optionQuestion-32, #optionQuestion-33, #optionQuestion-34, #optionQuestion-36, #optionQuestion-37, #optionQuestion-38, #optionQuestion-39, #optionQuestion-40, #optionQuestion-41, #optionQuestion-44, #optionQuestion-45, #optionQuestion-46, #optionQuestion-47, #optionQuestion-48, #optionQuestion-50 {
+  display: none;
+}
+
+.hidden-questions, #optionQuestion-3, #optionQuestion-22, #optionQuestion-26, #optionQuestion-28, #optionQuestion-31, #optionQuestion-35, #optionQuestion-42, #optionQuestion-43, #optionQuestion-49 {
+  display: none;
+}

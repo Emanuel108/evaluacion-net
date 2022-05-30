@@ -1,0 +1,93 @@
+﻿@model List<EvaluacionNet.Models.Option>
+
+@{
+    ViewData["Title"] = "Encuesta";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Encuesta</h1>
+
+<form class="row">
+    @foreach (var item in Model) {
+    <div class="question" id="optionQuestion-@item.OptionId">
+        <h6>@item.Question.NameQuestion</h6>
+    </div>
+        @if (@item.QuestionId == 1) {
+            <div class="form-check" id="divOption-@item.OptionId">
+                <input class="form-check-input" type="radio" name="optionQuestion1" id="option-@item.OptionId" value="@item.OptionId">
+                <label class="form-check-label" for="option-@item.OptionId">
+                    @item.OptionDescription
+                </label>
+            </div>
+        }
+        @if (@item.QuestionId == 2) {
+            <div class="form-check hidden-questions">
+                <input class="form-check-input" type="radio" name="option" id="option-@item.OptionId" value="@item.OptionId">
+                <label class="form-check-label" for="option-@item.OptionId">
+                    @item.OptionDescription
+                </label>
+            </div>
+        }
+        @if (@item.QuestionId == 3) {
+            <div class="form-check hidden-questions">
+                <input class="form-check-input" type="radio" name="option" id="option-@item.OptionId" value="@item.OptionId">
+                <label class="form-check-label" for="option-@item.OptionId">
+                    @item.OptionDescription
+                </label>
+            </div>
+        }
+        @if (@item.QuestionId == 4) {
+            <div class="form-check hidden-questions section1">
+                <input class="form-check-input" type="radio" name="optionQuestion4" id="option-@item.OptionId" value="@item.OptionId">
+                <label class="form-check-label" for="option-@item.OptionId">
+                    @item.OptionDescription
+                </label>
+            </div>
+        }
+        @if (@item.QuestionId == 5) {
+            <div class="form-check hidden-questions section2">
+                <input class="form-check-input" type="radio" name="option" id="option-@item.OptionId" value="@item.OptionId">
+                <label class="form-check-label" for="option-@item.OptionId">
+                    @item.OptionDescription
+                </label>
+            </div>
+        }
+        @if (@item.QuestionId == 6) {
+            <div class="form-check hidden-questions section2">
+                <input class="form-check-input" type="checkbox" name="option" id="option-@item.OptionId" value="@item.OptionId">
+                <label class="form-check-label" for="option-@item.OptionId">
+                    @item.OptionDescription
+                </label>
+            </div>
+        }
+        @if (@item.QuestionId == 7) {
+            <div class="form-check hidden-questions section2">
+                <input class="form-check-input" type="checkbox" name="option" id="option-@item.OptionId" value="@item.OptionId">
+                <label class="form-check-label" for="option-@item.OptionId">
+                    @item.OptionDescription
+                </label>
+            </div>
+        }
+        @if (@item.QuestionId == 8) {
+            <div class="form-check hidden-questions section2">
+                <input class="form-control" type="text" name="option" id="option-@item.OptionId">
+            </div>
+        }
+        @if (@item.QuestionId == 9) {
+            <div class="form-check hidden-questions section3">
+                <input class="form-check-input" type="checkbox" name="option" id="option-@item.OptionId" value="@item.OptionId">
+                <label class="form-check-label" for="option-@item.OptionId">
+                    @item.OptionDescription
+                </label>
+            </div>
+        }
+        @if (@item.QuestionId == 10) {
+            <div class="form-check hidden-questions section3">
+                <input class="form-check-input" type="radio" name="option" id="option-@item.OptionId" value="@item.OptionId">
+                <label class="form-check-label" for="option-@item.OptionId">
+                    @item.OptionDescription
+                </label>
+            </div>
+        }
+    }
+</form>
